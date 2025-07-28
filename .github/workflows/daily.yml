@@ -1,16 +1,16 @@
-name: Daily Scraper
+name: Daily Scraper Email
 
 on:
   schedule:
-    - cron: '0 9 * * *'  # 6 AM in Argentina (UTC-3)
+    - cron: '0 9 * * *'  # 6 AM Argentina (UTC-3)
   workflow_dispatch:
 
 jobs:
-  scrape:
+  run-bot:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
