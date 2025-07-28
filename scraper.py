@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 import os
 
 def main():
-    url = "https://example.com"  # replace with real URL
+    url = "https://www.cgeonline.com.ar/informacion/apertura-de-citas.html"  # replace with real URL
     response = requests.get(url)
     soup = BeautifulSoup(response.text, "html.parser")
 
