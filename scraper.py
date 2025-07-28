@@ -29,8 +29,8 @@ def send_email(content):
     password = os.getenv("EMAIL_PASS")
     recipient = os.getenv("EMAIL_TO")
 
-    msg = MIMEText(f"🕵️ Scraped Data:\n\n{content}")
-    msg['Subject'] = "📬 Daily Report"
+    msg = MIMEText(f"🕵️ Esta es la fecha actual posteada para renovar el pasaporte español:\n\n{content}")
+    msg['Subject'] = "📬 Ultima fecha posteada para renovar pasaporte español"
     msg['From'] = sender
     msg['To'] = recipient
 
